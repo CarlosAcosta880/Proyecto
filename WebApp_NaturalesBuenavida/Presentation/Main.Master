@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Presentation.Main" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>NaturalesBuenaVida app</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Menú de navegación -->
+            <ul>
+                <li><a href="WFInicio.aspx">Inicio</a></li>
+                <li><a href="WFProducts.aspx">Productos</a></li>
+                <li><a href="WFCategories.aspx">Categorías</a></li>
+                <li><a href="WFSuppliers.aspx">Proveedores</a></li>
+                <li><a href="WFEmployees.aspx">Empleados</a></li>
+                <li><a href="#">Usuarios</a></li>
+            </ul>
+
+            <!-- Contenido específico de cada página -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
